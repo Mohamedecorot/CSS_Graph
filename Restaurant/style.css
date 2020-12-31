@@ -1,3 +1,17 @@
 h2 {
     color: red;
 }
+
+.title-big {
+    color: blue;
+}
+
+#test {
+    color: violet;
+}
+
+h2 + p {
+    color: green;
+}
+
+/* pour s'entrainer au css : https://flukeout.github.io/ */
