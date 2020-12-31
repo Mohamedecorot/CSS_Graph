@@ -38,21 +38,35 @@ body {
 }
 
 .header-title {
+    font-weight: lighter;
+    font-style: italic;
     margin-top: 0;
+    text-transform: capitalize; /* Pour mettre en majuscule */
 }
 
 .header-nav {
     margin: 20px 0;
+    text-align: center;
 }
 
 .header-nav a {
     padding: 0 10px;
     color: inherit; /* pour hériter de la couleur du parent */
+    text-decoration: none; /* pour souligner ou pas les liens */
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
 }
 
 .main {
     background-color: lightgrey;
     padding: 20px;
+}
+
+.main p {
+    text-align: justify;
+    /* overflow-wrap: break-word; pour faire passer les mots à la ligne */
 }
 
 .footer{
