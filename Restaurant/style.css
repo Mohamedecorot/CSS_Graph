@@ -18,11 +18,18 @@ h2 + p {
 
 body {
     margin: 0;
+    line-height: 1.4;
+    /* letter-spacing: 0.2px; */
+    /* font-family: "Comic Sans MS", "Melvetica", sans-serif; */
+    font-family: "Source Sans pro", sans-serif;
 }
+
 .header{
     background-color: gray;
     padding: 20px;
     height: auto;
+    color: white;
+    /* font-size: 15px; */
 }
 
 .header img {
@@ -40,6 +47,7 @@ body {
 
 .header-nav a {
     padding: 0 10px;
+    color: inherit; /* pour hériter de la couleur du parent */
 }
 
 .main {
