@@ -1,4 +1,4 @@
-h2 {
+/* h2 {
     color: red;
 }
 
@@ -12,6 +12,34 @@ h2 {
 
 h2 + p {
     color: green;
-}
+} */
 
 /* pour s'entrainer au css : https://flukeout.github.io/ */
+
+body {
+    margin: 0;
+}
+.header{
+    background-color: gray;
+    padding: 20px;
+    height: auto;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+.header-title {
+    margin-top: 0;
+}
+
+.main {
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.footer{
+    background-color: gray;
+    padding: 10px 20px;
+}
