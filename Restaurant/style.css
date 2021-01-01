@@ -91,3 +91,17 @@ body {
     background-color: gray;
     padding: 10px 20px;
 }
+
+.align-left {
+    float: left;
+    margin-right: 15px;
+}
+
+.align-right {
+    float: right;
+    margin-left: 15px;
+}
+
+hr {
+    clear: both;
+}
