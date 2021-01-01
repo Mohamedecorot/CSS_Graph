@@ -25,6 +25,10 @@ Pour centrer les élèments d'un menu avec le flex
     justify-content: space-around;
     flex-wrap: wrap;
 } */
+/* pour ne plus avoir a faire de calcul, cela fera en sorte que les largeurs prennent en compte les margin et les padding */
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
