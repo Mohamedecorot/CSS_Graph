@@ -25,16 +25,12 @@ body {
 }
 
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: gray;
+    background: gray;
     padding: 20px;
     height: auto;
     color: white;
-    height: 30px;
     z-index: 2;
+    overflow: hidden;
     /* font-size: 15px; */
 }
 
@@ -43,17 +39,25 @@ body {
     height: auto;
 }
 
-.header-nav {
-    margin: 20px 0;
+.header-title {
     text-align: center;
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin: 0px;
+    font-weight: lighter;
+    font-style: italic;
+    text-transform: capitalize; /* Pour mettre en majuscule */
+    z-index: 4;
+}
+
+.header-nav {
+    overflow: hidden;
+    margin-top: 10px;
+    text-align: center;
     z-index: 3;
 }
 
 .header-nav a {
-    padding: 0 10px;
+    float: left;
+    width: 25%;
     color: inherit; /* pour hériter de la couleur du parent */
     text-decoration: none; /* pour souligner ou pas les liens */
 }
@@ -62,21 +66,10 @@ body {
     text-decoration: underline;
 }
 
-.header-title {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    margin-top: O;
-    font-weight: lighter;
-    font-style: italic;
-    text-transform: capitalize; /* Pour mettre en majuscule */
-    z-index: 4;
-}
-
 .main {
     position: relative;
     background-color: lightgrey;
-    padding-top: 70px 20px 20px;
+    padding: 20px;
     font-size: 16px;
     z-index: 1;
 }
