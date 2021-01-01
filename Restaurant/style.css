@@ -16,6 +16,16 @@ h2 + p {
 
 /* pour s'entrainer au css : https://flukeout.github.io/ */
 
+/*
+Pour centrer les élèments d'un menu avec le flex
+.menu {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} */
+
 body {
     margin: 0;
     line-height: 1.4;
