@@ -27,14 +27,14 @@ body, html {
     float: left;
 }
 
-.topbar nav a {
+.menu-item {
     color: #9F9F9F;
     text-decoration: none;
     font-weight: 500;
     padding: 0 53px;
 }
 
-.topbar nav a:hover, .topbar nav a.active {
+.menu-item:hover, .menu-item.active {
     color: #000;
 }
 
@@ -173,4 +173,12 @@ body, html {
 
 .footer {
     clear: both;
+}
+
+.important {
+    /* pour calculer les spécificités : https://specificity.keegan.st/
+    !important : pour outrepasser les règles de spécificité
+    */
+    font-size: 1.em;
+    color: red;
 }
