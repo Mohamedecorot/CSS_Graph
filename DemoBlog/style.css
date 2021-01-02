@@ -47,3 +47,24 @@ body {
 .social a:hover {
     opacity: 1;
 }
+
+.banniere {
+    height: 427px;
+    background: no-repeat center center / cover url("img/header.jpg");
+}
+
+.main {
+    float: left;
+    background: #FFF;
+    width: calc(100% - 375px);
+}
+
+.sidebar {
+    float: right;
+    background: #FBFBFB;
+    width: 375px;
+}
+
+.footer {
+    clear: both;
+}
