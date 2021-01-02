@@ -252,3 +252,7 @@ p::first-letter {
     font-size: 0.8rem;
     font-weight: bold;
 }
+
+.article-img:hover {
+    transform: scale(1.1);
+}
