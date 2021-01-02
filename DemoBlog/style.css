@@ -225,3 +225,30 @@ body, html {
     font-size: 1.em;
     color: red;
 }
+
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* .sidebar li::before {
+    content: '- ';
+}
+
+.sidebar li::after {
+    content: '.';
+} */
+
+.sidebar li a::after {
+    content: attr(data-count);
+    float:right;
+    background: grey;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFF;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
