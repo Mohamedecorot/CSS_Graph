@@ -98,24 +98,28 @@ body, html {
     background: no-repeat center center / cover url("img/header.jpg");
 }
 
+.body {
+    /* bon tuto pour flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 
 .main {
     /* float: left; */
     background: #FFF;
+    width: calc(100% - 375px);
     -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
             box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
     z-index: 2;
     position: relative;
 }
 
-.main .container {
-    overflow: hidden;
-}
-
 .sidebar {
     position: relative;
     /* float: right; */
     background: #FBFBFB;
+    width: 375px;
     padding: 40px;
     font-size: 17px;
     z-index: 1;
@@ -171,12 +175,10 @@ body, html {
 }
 
 .article {
+    position: relative;
     margin: 50px 0;
-}
-
-.article-img {
-    display: block;
-    margin-bottom: 10px;
+    padding-left: 333px;
+    min-height: 203px;
 }
 
 .article a {
@@ -186,6 +188,14 @@ body, html {
 
 .article a:hover {
     text-decoration: underline;
+}
+
+.article-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: 25px;
+    width: 308px;
 }
 
 .article-date {
@@ -265,29 +275,6 @@ p::first-letter {
     }
 }
 
-@media only screen and (min-width: 1100px) {
-    .article {
-        padding-left: 333px;
-        position: relative;
-    }
-    .article-img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 308px;
-    }
-}
-
-@media only screen and (min-width: 1100px) {
-    .body {
-        display: flex;
-    }
-    .sidebar {
-        flex: none;
-        width: 375px;
-    }
-}
-/*
 @media only screen and (max-width: 1100px) {
     .body {
         display: block;
@@ -335,4 +322,3 @@ p::first-letter {
         white-space: nowrap;
     }
 }
-*/
