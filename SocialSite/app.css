@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     background: #F1F1F1;
     font-family: Roboto, sans-serif;
@@ -42,6 +46,13 @@ a {
 
 .topbar-nav a:hover, .topbar-nav a.active {
     color: #FFF;
+}
+
+/* avec ces 3 règles on a un container adapté pour bureau et mobile */
+.container {
+    padding: 0 15px;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 520px) {
