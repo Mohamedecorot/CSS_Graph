@@ -52,7 +52,63 @@ a {
 .container {
     padding: 0 15px;
     max-width: 1080px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar a {
+    display: block;
+    width: 50%;
+    text-decoration: none;
+    padding: 0.6em 0;
+    transition: color .3s;
+}
+
+.sidebar a::before {
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 9px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 20px;
+    opacity: .67;
+    background: url(img/home.svg) center center / contain no-repeat;
+    transition: opacity .3s;
+}
+
+.sidebar .sidebar-message::before {
+    background: url(img/messages.svg) center center / contain no-repeat;
+}
+
+.sidebar .sidebar-events::before {
+    background: url(img/events.svg) center center / contain no-repeat;
+}
+
+.sidebar .sidebar-group::before {
+    background: url(img/friends.svg) center center / contain no-repeat;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    color: #000;
+}
+
+.sidebar a:hover::before, .sidebar a.active::before {
+    opacity: 1;
 }
 
 @media only screen and (min-width: 520px) {
