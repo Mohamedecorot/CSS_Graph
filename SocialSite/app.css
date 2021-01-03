@@ -64,6 +64,7 @@ a {
 .sidebar {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .sidebar a {
@@ -71,7 +72,9 @@ a {
     width: 50%;
     text-decoration: none;
     padding: 0.6em 0;
-    transition: color .3s;
+    transition: .3s;
+    border: solid 1px transparent;
+    padding-left: 10px;
 }
 
 .sidebar a::before {
@@ -99,12 +102,12 @@ a {
     background: url(img/friends.svg) center center / contain no-repeat;
 }
 
-.sidebar a:hover {
-    text-decoration: underline;
-}
-
 .sidebar a:hover, .sidebar a.active {
     color: #000;
+    border: solid 1px #D8D8D8;
+    border-radius: 3px;
+    background: #FFF;
+    font-weight: bold;
 }
 
 .sidebar a:hover::before, .sidebar a.active::before {
@@ -124,5 +127,28 @@ a {
     }
     .topbar-nav a {
         margin: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .site {
+        display: flex;
+    }
+    .sidebar {
+        display: block;
+        flex: none;
+        width: 180px;
+    }
+    .sidebar a {
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .aside {
+        flex: none;
+        width: 310px;
     }
 }
