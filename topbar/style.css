@@ -1,12 +1,13 @@
 :root {
-    --color: #2CC09C;
+    --topbar-color: #2CC09C;
+    --topbar-background: #212529;
 }
 
 .topbar {
     font-family: Roboto, sans-serif;
     font-size: 12px;
     color: #FFF;
-    background: #212529;
+    background: var(--topbar-background);
 }
 
 .topbar a {
@@ -42,15 +43,15 @@
 }
 
 .topbar__infos {
-    background-color: var(--color);
+    background-color: var(--topbar-color);
 }
 
 .topbar__links svg {
-    color: var(--color);
+    color: var(--topbar-color);
 }
 
 .topbar__links a:hover {
-    color: var(--color);
+    color: var(--topbar-color);
 }
 
 .topbar__lang a::after {
@@ -70,14 +71,15 @@
     margin-right: auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 720px) {
     .topbar {
       font-size: 14px;
+      background: linear-gradient( to right, var(--topbar-color), var(--topbar-color) 50%, var(--topbar-background) 50.01%, var(--topbar-background) )
     }
     .topbar__container {
         display: flex;
         justify-content: space-between;
-        /* background: var(--topbar-background); */
+        background: var(--topbar-background);
     }
     .topbar li, .topbar a {
         height: 55px;
@@ -89,7 +91,7 @@
     }
 
     .topbar__infos li:last-child {
-        background-color: #212529;
+        background: var(--topbar-background);
         padding: 0;
     }
 
@@ -98,10 +100,10 @@
         margin-right: 15px;
         display: inline-block;
         border-right: solid 30px transparent;
-        border-bottom: solid 55px var(--color);
+        border-bottom: solid 55px var(--topbar-color);
     }
 
     .topbar__infos li:last-child svg {
-        color: var(--color);
+        color: var(--topbar-color);
     }
   }
